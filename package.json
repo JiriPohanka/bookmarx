@@ -1,0 +1,58 @@
+{
+  "name": "bookmarks-rework",
+  "version": "0.1.0",
+  "description": "Bookmark app for storing 'stale' browser tabs and storing those that are worth it",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.4.2",
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "array-move": "^2.1.0",
+    "immer": "^3.1.1",
+    "react": "^17.0.2",
+    "react-dnd": "^7.4.5",
+    "react-dnd-html5-backend": "^7.4.4",
+    "react-dnd-multi-backend": "^3.2.1",
+    "react-dnd-touch-backend": "^0.8.1",
+    "react-dom": "^17.0.2",
+    "react-flip-toolkit": "^7.0.13",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.3",
+    "twin.macro": "^2.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
