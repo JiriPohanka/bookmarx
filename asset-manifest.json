@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/bookmarx/static/css/main.be712775.chunk.css",
+    "main.js": "/bookmarx/static/js/main.d92925bb.chunk.js",
+    "main.js.map": "/bookmarx/static/js/main.d92925bb.chunk.js.map",
+    "runtime-main.js": "/bookmarx/static/js/runtime-main.be5cb429.js",
+    "runtime-main.js.map": "/bookmarx/static/js/runtime-main.be5cb429.js.map",
+    "static/js/2.0cc8c3ce.chunk.js": "/bookmarx/static/js/2.0cc8c3ce.chunk.js",
+    "static/js/2.0cc8c3ce.chunk.js.map": "/bookmarx/static/js/2.0cc8c3ce.chunk.js.map",
+    "index.html": "/bookmarx/index.html",
+    "static/css/main.be712775.chunk.css.map": "/bookmarx/static/css/main.be712775.chunk.css.map",
+    "static/js/2.0cc8c3ce.chunk.js.LICENSE.txt": "/bookmarx/static/js/2.0cc8c3ce.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be5cb429.js",
+    "static/js/2.0cc8c3ce.chunk.js",
+    "static/css/main.be712775.chunk.css",
+    "static/js/main.d92925bb.chunk.js"
+  ]
+}
