@@ -3,7 +3,7 @@ import { v4 } from "uuid"
 class BookmarkObj {
 
     constructor(
-        title = "new bookmark",
+        title = "",
         description = "No description available",
         url = "#",
         itemType = "buffer",

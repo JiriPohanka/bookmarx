@@ -10,8 +10,6 @@ import arrayMove from "array-move";
 const DataGrid = ({ className, bookmarks, setBookmarks }
 ) => {
 
-    console.log(className)
-
     const moveCard = (dragIndex, hoverIndex) => {
         // Same group - just reorder
         setBookmarks(produce(bookmarks, draft => draft = arrayMove(draft, dragIndex, hoverIndex)))

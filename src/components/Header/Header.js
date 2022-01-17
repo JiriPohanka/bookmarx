@@ -1,9 +1,22 @@
 import { NavLink } from 'react-router-dom'
 import { Switch } from '@mui/material'
+import tw from 'twin.macro'
+import styled from "styled-components";
 
-const Header = (props) => {
-    const setAutoSubmit = props.setAutoSubmit
-    const autoSubmit = props.autoSubmit
+
+const AutosubmitWrap = styled.div`
+    ${tw`flex items-center ml-auto`}
+    `
+
+const HeaderWrap = styled.header`
+    ${tw`flex items-center`}
+    `
+
+const NavList = styled.ul`
+    ${tw`flex items-center`}
+    `
+
+const Header = ({ autoSubmit, setAutoSubmit }) => {
 
     function handleToggle() {
         setAutoSubmit(!autoSubmit)
@@ -12,36 +25,42 @@ const Header = (props) => {
     const navItems = [
         {
             title: "Buffer",
-            link: "/buffer",
-            cName: "nav-item buffer-nav-item"
+            link: "/buffer"
         },
         {
             title: "Library",
-            link: "/library",
-            cName: "nav-item library-nav-item"
-        },
-        {
-            title: "Archive",
-            link: "/archive",
-            cName: "nav-item archive-nav-item"
+            link: "/library"
         }
     ]
 
     return (
-        <header>
+        <HeaderWrap>
             <nav>
-                <ul>
+                <NavList>
                     {navItems.map((item, index) =>
                         <li key={index}>
-                            <NavLink className={item.cName} activeClassName="is-active" to={item.link}>{item.title}</NavLink>
+                            <NavLink className={isActive => "p-4" +
+                                (isActive.isActive ? " bg-gray-300" : "")
+                            } to={item.link}>{item.title}
+                            </NavLink>
                         </li>)}
-                </ul>
+                </NavList>
             </nav>
-            <div className="autosubmit-wrap">
+            <AutosubmitWrap>
                 <span>autosubmit</span>
-                <Switch onChange={handleToggle} />
-            </div>
-        </header>
+                <Switch onChange={handleToggle} checked={autoSubmit} />
+            </AutosubmitWrap>
+
+            <nav>
+                <NavList>
+                    <li>
+                        <NavLink className={isActive => "p-4" +
+                            (isActive.isActive ? " bg-gray-300" : "")
+                        } to="/archive">Archive</NavLink>
+                    </li>
+                </NavList>
+            </nav>
+        </HeaderWrap>
     )
 }
 
